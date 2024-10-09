@@ -1,127 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aisha Abdullahi - Computer Science Student</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('https://example.com/your-background-image.jpg') no-repeat center center fixed; /* Add your image URL */
-            background-size: cover;
-            color: #fff; /* Change text color for better contrast */
-            scroll-behavior: smooth; /* Smooth scrolling */
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        section {
-            height: 100vh; /* Full viewport height */
-            display: flex; /* Center content */
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
-            margin: 0; /* Remove default margin */
-        }
-        header, footer {
-            background-color: rgba(51, 51, 51, 0.8);
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-            opacity: 0; /* Initially hidden */
-            transition: opacity 0.3s;
-            position: absolute; /* Position it at the top */
-            width: 100%;
-        }
-        nav a {
-            margin: 0 15px;
-            padding: 10px 20px;
-            background-color: rgba(68, 68, 68, 0.8);
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        .nav-container:hover nav {
-            opacity: 1; /* Show on hover */
-        }
-        .logo {
-            max-width: 100px;
-            margin: 20px;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aisha Abdullahi - Computer Science Student</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f0e5e5 0%, #ffffff 100%);
+      transition: background-color 0.5s ease;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      margin: 20px 0;
+      opacity: 0; /* Initially hidden */
+      transition: opacity 0.3s;
+      position: absolute; /* Position it at the top */
+      width: 100%;
+    }
+    nav a {
+      margin: 0 15px;
+      padding: 10px 20px;
+      background-color: #444;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .nav-container:hover nav {
+      opacity: 1; /* Show on hover */
+    }
+    .logo {
+      max-width: 100px;
+      margin: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    section {
+      padding: 40px;
+      margin: 20px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .btn {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .nav-container {
+      position: relative; /* For the hover effect */
+    }
+  </style>
 </head>
 <body>
-
-<header>
+  <header>
     <h1>Aisha Abdullahi</h1>
     <p>Computer Science Student at Calvin University</p>
-</header>
+  </header>
 
-<div class="nav-container">
+  <div class="nav-container">
     <nav>
-        <a href="#intro">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#about">About</a>
-        <a href="#internship">Experience</a>
-        <a href="#contact">Download</a>
+      <a href="#intro">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#internship">Experience</a>
+      <a href="#contact">Download</a>
     </nav>
-</div>
+  </div>
 
-<section id="intro">
+  <section id="intro">
     <h2>Introduction</h2>
     <p>Welcome to my landing page! I'm a passionate computer science student with a keen interest in technology and innovation.</p>
-</section>
+  </section>
 
-<section id="about">
+  <section id="about">
     <h2>About Me</h2>
-    <img src="https://example.com/your-image.jpg" alt="About Me Image" style="max-width: 100%; height: auto;">
-    <p>I'm currently pursuing a degree in Computer Science at Calvin University...</p>
-</section>
+    <p>I'm currently pursuing a degree in Computer Science at Calvin University. I have a strong foundation in programming languages like Python, Java, and C++. I'm also proficient in web development technologies such as HTML, CSS, and JavaScript.</p>
+  </section>
 
-<section id="skills">
+  <section id="skills">
     <h2>Skills</h2>
     <p>Here are some of the skills and technologies I've worked with:</p>
     <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Microsoft_Office_logo_%282013%E2%80%932019%29.svg" alt="Microsoft Office Logo">
-</section>
+  </section>
 
-<section id="internship">
+  <section id="internship">
     <h2>Internship Experience</h2>
-    <p>I recently completed an internship at a fashion tech startup...</p>
-</section>
+    <p>I recently completed an internship at a fashion tech startup, where I worked on developing e-commerce solutions and web applications. This experience allowed me to enhance my skills in web development, project management, and collaboration.</p>
+  </section>
 
-<section id="contact">
+  <section id="contact">
     <h2>Download Resume</h2>
     <a href="https://github.com/Hecatae1/landing-page/raw/main/Aisha%20Abdullahi-Updated%20Resume%20(1).docx" class="btn" download>
-        <i class="fas fa-download"></i> Download Resume
+      <i class="fas fa-download"></i> Download Resume
     </a>
-    <button onclick="showAlert()">Click Me!</button> <!-- Button to trigger alert -->
-</section>
+  </section>
 
-<footer>
+  <footer>
     <p>&copy; 2023 Aisha Abdullahi. All rights reserved.</p>
-</footer>
-<link rel="stylesheet" href="styles.css">
-
+  </footer>
 </body>
 </html>
