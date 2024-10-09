@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://raw.githubusercontent.com/Hecatae1/landing-page/main/Beige%20and%20Pink%20Watercolor%20Page%20Border.png') no-repeat center center fixed;
+    background-size: cover; /* Cover the entire area */
+    color: #333; /* Text color */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for links */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-container {
+    position: relative; /* For the hover effect */
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s;
+    position: absolute; /* Position it at the top */
+    width: 100%;
+}
+
+nav a {
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: rgba(68, 68, 68, 0.8); /* Semi-transparent background */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555; /* Darker on hover */
+}
+
+.nav-container:hover nav {
+    opacity: 1; /* Show on hover */
+}
+
+section {
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Center content */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+}
+
+.logo {
+    max-width: 100px;
+    margin: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333; /* Button background */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent footer */
+    color: #fff; /* Footer text color */
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Optional: Add responsive styles */
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 10px; /* Adjust margins on smaller screens */
+    }
+    
+    section {
+        padding: 10px; /* Adjust padding on smaller screens */
+    }
+}
