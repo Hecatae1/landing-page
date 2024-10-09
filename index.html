@@ -1,138 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aisha Abdullahi - Computer Science Student</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to bottom, #f0e5e5 0%, #ffffff 100%);
-      transition: background-color 0.5s ease;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      text-align: center;
-      margin: 20px 0;
-      opacity: 0; /* Initially hidden */
-      transition: opacity 0.3s;
-      position: absolute; /* Position it at the top */
-      width: 100%;
-    }
-    nav a {
-      margin: 0 15px;
-      padding: 10px 20px;
-      background-color: #444;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-    nav a:hover {
-      background-color: #555;
-    }
-    .nav-container:hover nav {
-      opacity: 1; /* Show on hover */
-    }
-    .logo {
-      max-width: 100px;
-      margin: 20px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    section {
-      padding: 40px;
-      margin: 20px;
-      border-radius: 10px;
-      background-color: rgba(255, 255, 255, 0.8);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-    .btn {
-      display: inline-block;
-      background-color: #333;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-    .nav-container {
-      position: relative; /* For the hover effect */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aisha Abdullahi - Computer Science Student</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrolling */
+            transition: background-color 0.5s ease;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .nav-container {
+            position: fixed; /* Keep navigation at the top */
+            top: 20px; /* Position it with some padding */
+            right: 20px; /* Position it with some padding */
+            z-index: 1000; /* Ensure it stays on top */
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s;
+        }
+        .nav-container:hover {
+            opacity: 1; /* Show on hover */
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+        }
+        nav a {
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #444;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .nav-icon {
+            cursor: pointer;
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        section {
+            height: 100vh; /* Full viewport height */
+            display: flex; /* Center content */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        section:nth-child(even) {
+            background-color: rgba(240, 240, 240, 0.9); /* Alternate background color */
+        }
+        h2 {
+            font-size: 2.5em; /* Increase heading size */
+            margin: 20px 0;
+            color: #333;
+        }
+        p {
+            font-size: 1.2em; /* Increase paragraph size */
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Aisha Abdullahi</h1>
-    <p>Computer Science Student at Calvin University</p>
-  </header>
+    <header>
+        <h1>Aisha Abdullahi</h1>
+        <p>Computer Science Student at Calvin University</p>
+    </header>
 
-  <div class="nav-container">
-    <nav>
-      <a href="#intro">Home</a>
-      <a href="#skills">Skills</a>
-      <a href="#about">About</a>
-      <a href="#internship">Experience</a>
-      <a href="#contact">Download</a>
-    </nav>
-  </div>
+    <div class="nav-container">
+        <div class="nav-icon"><i class="fas fa-bars"></i></div>
+        <nav>
+            <a href="#intro">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="#internship">Experience</a>
+            <a href="#contact">Download</a>
+        </nav>
+    </div>
 
-  <section id="intro">
-    <h2>Introduction</h2>
-    <p>Welcome to my landing page! I'm a passionate computer science student with a keen interest in technology and innovation.</p>
-  </section>
+    <section id="intro">
+        <h2>Introduction</h2>
+        <p>Welcome to my landing page! I'm a passionate computer science student with a keen interest in technology and innovation.</p>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm currently pursuing a degree in Computer Science at Calvin University. I have a strong foundation in programming languages like Python, Java, and C++. I'm also proficient in web development technologies such as HTML, CSS, and JavaScript.</p>
-  </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm currently pursuing a degree in Computer Science at Calvin University. I have a strong foundation in programming languages like Python, Java, and C++. I'm also proficient in web development technologies such as HTML, CSS, and JavaScript.</p>
+    </section>
 
-   <section id="skills">
-    <h2>Skills</h2>
-    <p>Here are some of the skills and technologies I've worked with:</p>
-    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png" alt="Linux Logo">
-  <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Microsoft_Office_logo_%282013%E2%80%932019%29.svg" alt="Microsoft Office Logo">
-    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="HTML Logo">
-    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="VSCode Logo">
-    <img class="logo" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo">
-  </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Here are some of the skills and technologies I've worked with:</p>
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png" alt="Linux Logo">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Microsoft_Office_logo_%282013%E2%80%932019%29.svg" alt="Microsoft Office Logo">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="HTML Logo">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="VSCode Logo">
+        <img class="logo" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo">
+    </section>
 
+    <section id="internship">
+        <h2>Internship Experience</h2>
+        <p>I recently completed an internship at a fashion tech startup, where I worked on developing e-commerce solutions and web applications. This experience allowed me to enhance my skills in web development, project management, and collaboration.</p>
+    </section>
 
-  <section id="internship">
-    <h2>Internship Experience</h2>
-    <p>I recently completed an internship at a fashion tech startup, where I worked on developing e-commerce solutions and web applications. This experience allowed me to enhance my skills in web development, project management, and collaboration.</p>
-  </section>
+    <section id="contact">
+        <h2>Download Resume</h2>
+        <a href="https://github.com/Hecatae1/landing-page/raw/main/Aisha%20Abdullahi-Updated%20Resume%20(1).docx" class="btn" download>
+            <i class="fas fa-download"></i> Download Resume
+        </a>
+    </section>
 
-  <section id="contact">
-    <h2>Download Resume</h2>
-    <a href="https://github.com/Hecatae1/landing-page/raw/main/Aisha%20Abdullahi-Updated%20Resume%20(1).docx" class="btn" download>
-      <i class="fas fa-download"></i> Download Resume
-    </a>
-  </section>
-
-  <footer>
-    <p>&copy; 2023 Aisha Abdullahi. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2023 Aisha Abdullahi. All rights reserved.</p>
+    </footer>
 </body>
 </html>
