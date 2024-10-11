@@ -10,11 +10,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Prevent scrolling */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
             transition: background-color 0.5s ease;
-        }
-        html {
-            scroll-behavior: smooth;
         }
         header {
             background-color: #333;
@@ -22,7 +19,17 @@
             padding: 20px;
             text-align: center;
         }
-    
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
         section {
             height: 100vh; /* Full viewport height */
             display: flex; /* Center content */
@@ -65,6 +72,10 @@
             bottom: 0;
             width: 100%;
         }
+        .logo {
+            width: 50px; /* Set a uniform width for logos */
+            margin: 10px; /* Add space between logos */
+        }
     </style>
 </head>
 <body>
@@ -73,16 +84,13 @@
         <p>Computer Science Student at Calvin University</p>
     </header>
 
-    <div class="nav-container">
-        <div class="nav-icon"><i class="fas fa-bars"></i></div>
-        <nav>
-            <a href="#intro">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#about">About</a>
-            <a href="#internship">Experience</a>
-            <a href="#contact">Download</a>
-        </nav>
-    </div>
+    <nav>
+        <a href="#intro">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#internship">Experience</a>
+        <a href="#contact">Download</a>
+    </nav>
 
     <section id="intro">
         <h2>Introduction</h2>
@@ -97,11 +105,13 @@
     <section id="skills">
         <h2>Skills</h2>
         <p>Here are some of the skills and technologies I've worked with:</p>
-        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png" alt="Linux Logo">
-        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Microsoft_Office_logo_%282013%E2%80%932019%29.svg" alt="Microsoft Office Logo">
-        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="HTML Logo">
-        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="VSCode Logo">
-        <img class="logo" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo">
+        <div>
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png" alt="Linux Logo">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Microsoft_Office_logo_%282013%E2%80%932019%29.svg" alt="Microsoft Office Logo">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="HTML Logo">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="VSCode Logo">
+            <img class="logo" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo">
+        </div>
     </section>
 
     <section id="internship">
